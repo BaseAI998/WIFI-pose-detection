@@ -1,0 +1,89 @@
+{
+  "status": "development comparison, NOT independent final test",
+  "seed": 20261019,
+  "families": {
+    "baseline_mlp": {
+      "hidden": [
+        32,
+        16
+      ],
+      "dropout": 0.15,
+      "lr": 0.002,
+      "decay": 0.03,
+      "epochs": 250,
+      "smoothing": 0.0
+    },
+    "regularized_mlp": {
+      "hidden": [
+        16,
+        8
+      ],
+      "dropout": 0.35,
+      "lr": 0.002,
+      "decay": 0.2,
+      "epochs": 180,
+      "smoothing": 0.08
+    },
+    "linear": {
+      "hidden": [],
+      "dropout": 0.0,
+      "lr": 0.005,
+      "decay": 0.5,
+      "epochs": 250,
+      "smoothing": 0.05
+    }
+  },
+  "calibration_methods": [
+    "none",
+    "conservative_T"
+  ],
+  "temporal_blocks_relative_seconds": [
+    [
+      0.0,
+      17.0
+    ],
+    [
+      23.0,
+      37.0
+    ],
+    [
+      43.0,
+      60.05
+    ]
+  ],
+  "embargo_seconds": 6,
+  "fold_roles": [
+    {
+      "train": 0,
+      "calibration": 1,
+      "evaluation": 2
+    },
+    {
+      "train": 1,
+      "calibration": 2,
+      "evaluation": 0
+    },
+    {
+      "train": 2,
+      "calibration": 0,
+      "evaluation": 1
+    }
+  ],
+  "final_fit": {
+    "train_blocks": [
+      0,
+      2
+    ],
+    "calibration_block": 1,
+    "test": null
+  },
+  "old_test_status": "Now development. Active-mined hard labels also development.",
+  "selection": "feasible development risk/uncertain rejection first, then maximize coverage; no final-test claim",
+  "target_known_error": 0.03,
+  "target_uncertain_rejection": 0.9,
+  "absolute_spatial_features": false,
+  "scene_calibration": false,
+  "probability_only_ablation": true,
+  "support": "Training-only nearest-class consistency, class radius, uncertain-neighborhood rejection",
+  "no_image_or_occlusion_branch": "Insufficient evidence to justify extra models before this comparison"
+}

@@ -1,0 +1,338 @@
+{
+  "policy": "Flag only. Geometric similarity does not prove label inconsistency.",
+  "standing_standard": "Confidently standing, including bent-over standing, is standing.",
+  "uncertain_standard": "Support/contact cannot be determined, transition, or ambiguous half-squat.",
+  "review_pairs": [
+    {
+      "distance": 0.3532724678516388,
+      "uncertain": {
+        "output_frame": 3866,
+        "source_frame": 18249,
+        "source_time_sec": 609.007549,
+        "person_id": 1,
+        "label": "uncertain",
+        "occlusion": "unmarked",
+        "origin": "old",
+        "bbox_xyxy": [
+          124.1146240234375,
+          278.1351318359375,
+          462.83245849609375,
+          715.295166015625
+        ]
+      },
+      "standing": {
+        "output_frame": 330,
+        "source_frame": 2128,
+        "source_time_sec": 71.01584,
+        "person_id": 1,
+        "label": "standing",
+        "occlusion": "clear",
+        "origin": "hard_new",
+        "bbox_xyxy": [
+          110.128173828125,
+          253.1162109375,
+          482.422607421875,
+          712.82080078125
+        ]
+      }
+    },
+    {
+      "distance": 0.41030919551849365,
+      "uncertain": {
+        "output_frame": 5035,
+        "source_frame": 19418,
+        "source_time_sec": 648.01954,
+        "person_id": 1,
+        "label": "uncertain",
+        "occlusion": "unmarked",
+        "origin": "old",
+        "bbox_xyxy": [
+          130.15771484375,
+          254.3797607421875,
+          429.766845703125,
+          704.503662109375
+        ]
+      },
+      "standing": {
+        "output_frame": 330,
+        "source_frame": 2128,
+        "source_time_sec": 71.01584,
+        "person_id": 1,
+        "label": "standing",
+        "occlusion": "clear",
+        "origin": "hard_new",
+        "bbox_xyxy": [
+          110.128173828125,
+          253.1162109375,
+          482.422607421875,
+          712.82080078125
+        ]
+      }
+    },
+    {
+      "distance": 0.5062720775604248,
+      "uncertain": {
+        "output_frame": 4226,
+        "source_frame": 18609,
+        "source_time_sec": 621.021507,
+        "person_id": 2,
+        "label": "uncertain",
+        "occlusion": "unmarked",
+        "origin": "old",
+        "bbox_xyxy": [
+          522.7373046875,
+          405.0860290527344,
+          823.4600830078125,
+          714.8382568359375
+        ]
+      },
+      "standing": {
+        "output_frame": 4170,
+        "source_frame": 18553,
+        "source_time_sec": 619.152669,
+        "person_id": 2,
+        "label": "standing",
+        "occlusion": "severe",
+        "origin": "hard_new",
+        "bbox_xyxy": [
+          447.14971923828125,
+          393.93896484375,
+          740.2312622070312,
+          715.0849609375
+        ]
+      }
+    },
+    {
+      "distance": 0.5189953446388245,
+      "uncertain": {
+        "output_frame": 540,
+        "source_frame": 2338,
+        "source_time_sec": 78.023982,
+        "person_id": 1,
+        "label": "uncertain",
+        "occlusion": "unmarked",
+        "origin": "old",
+        "bbox_xyxy": [
+          0.0728759765625,
+          219.4917755126953,
+          305.45684814453125,
+          707.5725708007812
+        ]
+      },
+      "standing": {
+        "output_frame": 1529,
+        "source_frame": 3327,
+        "source_time_sec": 111.028994,
+        "person_id": 1,
+        "label": "standing",
+        "occlusion": "unmarked",
+        "origin": "old",
+        "bbox_xyxy": [
+          0.0,
+          243.63397216796875,
+          348.68463134765625,
+          712.6029052734375
+        ]
+      }
+    },
+    {
+      "distance": 0.5467228889465332,
+      "uncertain": {
+        "output_frame": 3990,
+        "source_frame": 18373,
+        "source_time_sec": 613.14569,
+        "person_id": 1,
+        "label": "uncertain",
+        "occlusion": "clear",
+        "origin": "hard_new",
+        "bbox_xyxy": [
+          143.2385711669922,
+          308.22540283203125,
+          436.39935302734375,
+          611.953125
+        ]
+      },
+      "standing": {
+        "output_frame": 330,
+        "source_frame": 2128,
+        "source_time_sec": 71.01584,
+        "person_id": 1,
+        "label": "standing",
+        "occlusion": "clear",
+        "origin": "hard_new",
+        "bbox_xyxy": [
+          110.128173828125,
+          253.1162109375,
+          482.422607421875,
+          712.82080078125
+        ]
+      }
+    },
+    {
+      "distance": 0.5775859951972961,
+      "uncertain": {
+        "output_frame": 4495,
+        "source_frame": 18878,
+        "source_time_sec": 629.998603,
+        "person_id": 2,
+        "label": "uncertain",
+        "occlusion": "unmarked",
+        "origin": "old",
+        "bbox_xyxy": [
+          518.34912109375,
+          408.43267822265625,
+          822.56982421875,
+          714.3279418945312
+        ]
+      },
+      "standing": {
+        "output_frame": 4170,
+        "source_frame": 18553,
+        "source_time_sec": 619.152669,
+        "person_id": 2,
+        "label": "standing",
+        "occlusion": "severe",
+        "origin": "hard_new",
+        "bbox_xyxy": [
+          447.14971923828125,
+          393.93896484375,
+          740.2312622070312,
+          715.0849609375
+        ]
+      }
+    },
+    {
+      "distance": 0.6337434649467468,
+      "uncertain": {
+        "output_frame": 4350,
+        "source_frame": 18733,
+        "source_time_sec": 625.159648,
+        "person_id": 2,
+        "label": "uncertain",
+        "occlusion": "severe",
+        "origin": "hard_new",
+        "bbox_xyxy": [
+          506.8675842285156,
+          427.0318298339844,
+          808.2542724609375,
+          715.8404541015625
+        ]
+      },
+      "standing": {
+        "output_frame": 4170,
+        "source_frame": 18553,
+        "source_time_sec": 619.152669,
+        "person_id": 2,
+        "label": "standing",
+        "occlusion": "severe",
+        "origin": "hard_new",
+        "bbox_xyxy": [
+          447.14971923828125,
+          393.93896484375,
+          740.2312622070312,
+          715.0849609375
+        ]
+      }
+    },
+    {
+      "distance": 0.6588692665100098,
+      "uncertain": {
+        "output_frame": 5215,
+        "source_frame": 19598,
+        "source_time_sec": 654.026519,
+        "person_id": 1,
+        "label": "uncertain",
+        "occlusion": "unmarked",
+        "origin": "old",
+        "bbox_xyxy": [
+          203.71197509765625,
+          320.8311767578125,
+          441.9266357421875,
+          619.3394165039062
+        ]
+      },
+      "standing": {
+        "output_frame": 930,
+        "source_frame": 2728,
+        "source_time_sec": 91.039103,
+        "person_id": 1,
+        "label": "standing",
+        "occlusion": "clear",
+        "origin": "hard_new",
+        "bbox_xyxy": [
+          301.052001953125,
+          39.31591796875,
+          422.7628173828125,
+          281.6708068847656
+        ]
+      }
+    },
+    {
+      "distance": 0.6893936395645142,
+      "uncertain": {
+        "output_frame": 2518,
+        "source_frame": 11507,
+        "source_time_sec": 384.012815,
+        "person_id": 1,
+        "label": "uncertain",
+        "occlusion": "unmarked",
+        "origin": "old",
+        "bbox_xyxy": [
+          0.257568359375,
+          162.93505859375,
+          223.45663452148438,
+          550.9408569335938
+        ]
+      },
+      "standing": {
+        "output_frame": 495,
+        "source_frame": 2293,
+        "source_time_sec": 76.522237,
+        "person_id": 3,
+        "label": "standing",
+        "occlusion": "clear",
+        "origin": "hard_new",
+        "bbox_xyxy": [
+          250.6497802734375,
+          72.62637329101562,
+          378.69378662109375,
+          335.1877136230469
+        ]
+      }
+    },
+    {
+      "distance": 0.7440730929374695,
+      "uncertain": {
+        "output_frame": 2248,
+        "source_frame": 11237,
+        "source_time_sec": 375.002347,
+        "person_id": 5,
+        "label": "uncertain",
+        "occlusion": "unmarked",
+        "origin": "old",
+        "bbox_xyxy": [
+          840.380859375,
+          162.2565460205078,
+          1015.72998046875,
+          315.15374755859375
+        ]
+      },
+      "standing": {
+        "output_frame": 2338,
+        "source_frame": 11327,
+        "source_time_sec": 378.005836,
+        "person_id": 1,
+        "label": "standing",
+        "occlusion": "unmarked",
+        "origin": "old",
+        "bbox_xyxy": [
+          62.14247131347656,
+          85.31576538085938,
+          241.9302520751953,
+          465.1641540527344
+        ]
+      }
+    }
+  ],
+  "labels_automatically_changed": 0
+}

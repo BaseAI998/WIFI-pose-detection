@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "input": "VID_20260921_182630.mp4",
+  "model": "yolo11x-pose.pt",
+  "video": {
+    "width": 1280,
+    "height": 720,
+    "fps": 29.965145801549806,
+    "source_frame_count": 20663,
+    "source_duration_sec": 689.567811111111
+  },
+  "intervals_sec": [[60.0, 120.0], [360.0, 420.0], [600.0, 660.0]],
+  "processed_frames": 5394,
+  "detected_people_instances": 22398,
+  "outputs": {
+    "keypoints_jsonl": "VID_20260921_182630_keypoints_v2.jsonl"
+  },
+  "reuses_keypoints": true,
+  "cached_keypoints": "VID_20260921_182630_keypoints.jsonl",
+  "cached_keypoints_sha256": "53878cbb43418f129ed5e92b5bee3504245f59c48128b46c80b7f4e85cd3a78c",
+  "labeler_keypoints": "VID_20260921_182630_keypoints.jsonl",
+  "keypoints_only_video": null,
+  "historical_source_metadata": "VID_20260921_182630_source_metadata.json",
+  "relocations": {
+    "video/VID_20260921_182630.mp4": "VID_20260921_182630.mp4",
+    "yolo_pose_posture/outputs_yolo11x/VID_20260921_182630_keypoints.jsonl": "VID_20260921_182630_keypoints.jsonl",
+    "yolo_pose_posture/outputs_yolo11x_posture_v2/VID_20260921_182630_keypoints.jsonl": "VID_20260921_182630_keypoints_v2.jsonl",
+    "yolo_pose_posture/outputs_yolo11x_posture_v2/VID_20260921_182630_run_metadata.json": "VID_20260921_182630_source_metadata.json"
+  },
+  "notes": [
+    "Paths are relative to this input.json. No YOLO package or weights are required by the posture classifier.",
+    "Original video and both JSONL files are byte-identical copies; annotation dataset_id remains unchanged.",
+    "Legacy posture fields in cached JSONL are ignored by feature extraction; they are not human labels.",
+    "The source metadata is preserved unchanged only to verify historical experiment hashes.",
+    "No keypoints-only visualization video was present in the original project."
+  ]
+}

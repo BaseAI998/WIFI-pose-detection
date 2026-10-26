@@ -1,0 +1,19 @@
+{
+  "purpose": "Historical hash verification only. Normal input-dir workflows do not read this file.",
+  "relocations": {
+    "posture_labeler/posture_labels_4678427a (1).jsonl": "inputs/example/labels/baseline.jsonl",
+    "posture_labeler/posture_labels_4678427a (1)-hard.jsonl": "inputs/example/labels/hard_v1.jsonl",
+    "video/VID_20260921_182630.mp4": "inputs/example/VID_20260921_182630.mp4",
+    "yolo_pose_posture/outputs_yolo11x/VID_20260921_182630_keypoints.jsonl": "inputs/example/VID_20260921_182630_keypoints.jsonl",
+    "yolo_pose_posture/outputs_yolo11x_posture_v2/VID_20260921_182630_keypoints.jsonl": "runs/hard_v2_complete/provenance/input_example_legacy/VID_20260921_182630_keypoints_v2.jsonl",
+    "yolo_pose_posture/outputs_yolo11x_posture_v2/VID_20260921_182630_run_metadata.json": "runs/hard_v2_complete/provenance/input_example_legacy/VID_20260921_182630_source_metadata.json",
+    "input/example/input.json": "runs/hard_v2_complete/provenance/input_example_legacy/input.json",
+    "input/example/VID_20260921_182630_keypoints_v2.jsonl": "runs/hard_v2_complete/provenance/input_example_legacy/VID_20260921_182630_keypoints_v2.jsonl",
+    "input/example/VID_20260921_182630_source_metadata.json": "runs/hard_v2_complete/provenance/input_example_legacy/VID_20260921_182630_source_metadata.json",
+    "VID_20260921_182630.mp4": "inputs/example/VID_20260921_182630.mp4",
+    "VID_20260921_182630_keypoints.jsonl": "inputs/example/VID_20260921_182630_keypoints.jsonl",
+    "posture_labeler/exports/baseline.jsonl": "inputs/example/labels/baseline.jsonl",
+    "posture_labeler/exports/hard_v1.jsonl": "inputs/example/labels/hard_v1.jsonl"
+  },
+  "path_base": "posture_mlp_v2 project root (not the parent workspace)"
+}

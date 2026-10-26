@@ -1,0 +1,1215 @@
+{
+  "not_independent": true,
+  "overall": {
+    "known_n": 280,
+    "accepted": 272,
+    "errors_among_accepted": 0,
+    "coverage": 0.9714285714285714,
+    "unknown_rate": 0.02857142857142857,
+    "selective_error": 0.0,
+    "selective_error_wilson95": [
+      0,
+      0.013926833371036128
+    ],
+    "accuracy_counting_unknown_as_miss": 0.9714285714285714,
+    "macro_f1": 0.9904761904761905,
+    "confusion": {
+      "sitting": {
+        "sitting": 206,
+        "standing": 0,
+        "unknown": 8
+      },
+      "standing": {
+        "sitting": 0,
+        "standing": 66,
+        "unknown": 0
+      }
+    },
+    "per_class": {
+      "sitting": {
+        "support": 214,
+        "predicted": 206,
+        "precision": 1.0,
+        "recall": 0.9626168224299065,
+        "f1": 0.9809523809523809,
+        "unknown": 8
+      },
+      "standing": {
+        "support": 66,
+        "predicted": 66,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "unknown": 0
+      }
+    },
+    "uncertain_n": 59,
+    "uncertain_rejected": 57,
+    "uncertain_rejection_rate": 0.9661016949152542,
+    "ignore_n": 12,
+    "ignore_rejected": 8,
+    "ignore_policy": "Excluded from binary metrics, model fitting, calibration and threshold selection."
+  },
+  "visibility_proxy_groups": {
+    "legs_clear_proxy": {
+      "known_n": 61,
+      "accepted": 55,
+      "errors_among_accepted": 0,
+      "coverage": 0.9016393442622951,
+      "unknown_rate": 0.09836065573770492,
+      "selective_error": 0.0,
+      "selective_error_wilson95": [
+        0,
+        0.06528714378942788
+      ],
+      "accuracy_counting_unknown_as_miss": 0.9016393442622951,
+      "macro_f1": 0.875,
+      "confusion": {
+        "sitting": {
+          "sitting": 9,
+          "standing": 0,
+          "unknown": 6
+        },
+        "standing": {
+          "sitting": 0,
+          "standing": 46,
+          "unknown": 0
+        }
+      },
+      "per_class": {
+        "sitting": {
+          "support": 15,
+          "predicted": 9,
+          "precision": 1.0,
+          "recall": 0.6,
+          "f1": 0.75,
+          "unknown": 6
+        },
+        "standing": {
+          "support": 46,
+          "predicted": 46,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "unknown": 0
+        }
+      },
+      "uncertain_n": 20,
+      "uncertain_rejected": 18,
+      "uncertain_rejection_rate": 0.9,
+      "ignore_n": 10,
+      "ignore_rejected": 7,
+      "ignore_policy": "Excluded from binary metrics, model fitting, calibration and threshold selection."
+    },
+    "legs_partial_proxy": {
+      "known_n": 50,
+      "accepted": 49,
+      "errors_among_accepted": 0,
+      "coverage": 0.98,
+      "unknown_rate": 0.02,
+      "selective_error": 0.0,
+      "selective_error_wilson95": [
+        0,
+        0.07270029673590504
+      ],
+      "accuracy_counting_unknown_as_miss": 0.98,
+      "macro_f1": 0.9920634920634921,
+      "confusion": {
+        "sitting": {
+          "sitting": 31,
+          "standing": 0,
+          "unknown": 1
+        },
+        "standing": {
+          "sitting": 0,
+          "standing": 18,
+          "unknown": 0
+        }
+      },
+      "per_class": {
+        "sitting": {
+          "support": 32,
+          "predicted": 31,
+          "precision": 1.0,
+          "recall": 0.96875,
+          "f1": 0.9841269841269841,
+          "unknown": 1
+        },
+        "standing": {
+          "support": 18,
+          "predicted": 18,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "unknown": 0
+        }
+      },
+      "uncertain_n": 3,
+      "uncertain_rejected": 3,
+      "uncertain_rejection_rate": 1.0,
+      "ignore_n": 0,
+      "ignore_rejected": 0,
+      "ignore_policy": "Excluded from binary metrics, model fitting, calibration and threshold selection."
+    },
+    "legs_hidden_proxy": {
+      "known_n": 169,
+      "accepted": 168,
+      "errors_among_accepted": 0,
+      "coverage": 0.9940828402366864,
+      "unknown_rate": 0.005917159763313609,
+      "selective_error": 0.0,
+      "selective_error_wilson95": [
+        0,
+        0.02235547155054422
+      ],
+      "accuracy_counting_unknown_as_miss": 0.9940828402366864,
+      "macro_f1": 0.9984984984984985,
+      "confusion": {
+        "sitting": {
+          "sitting": 166,
+          "standing": 0,
+          "unknown": 1
+        },
+        "standing": {
+          "sitting": 0,
+          "standing": 2,
+          "unknown": 0
+        }
+      },
+      "per_class": {
+        "sitting": {
+          "support": 167,
+          "predicted": 166,
+          "precision": 1.0,
+          "recall": 0.9940119760479041,
+          "f1": 0.996996996996997,
+          "unknown": 1
+        },
+        "standing": {
+          "support": 2,
+          "predicted": 2,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "unknown": 0
+        }
+      },
+      "uncertain_n": 36,
+      "uncertain_rejected": 36,
+      "uncertain_rejection_rate": 1.0,
+      "ignore_n": 2,
+      "ignore_rejected": 1,
+      "ignore_policy": "Excluded from binary metrics, model fitting, calibration and threshold selection."
+    }
+  },
+  "manual_occlusion_groups": {
+    "unmarked": {
+      "known_n": 203,
+      "accepted": 199,
+      "errors_among_accepted": 0,
+      "coverage": 0.9802955665024631,
+      "unknown_rate": 0.019704433497536946,
+      "selective_error": 0.0,
+      "selective_error_wilson95": [
+        0,
+        0.018938915883132453
+      ],
+      "accuracy_counting_unknown_as_miss": 0.9802955665024631,
+      "macro_f1": 0.9941520467836258,
+      "confusion": {
+        "sitting": {
+          "sitting": 169,
+          "standing": 0,
+          "unknown": 4
+        },
+        "standing": {
+          "sitting": 0,
+          "standing": 30,
+          "unknown": 0
+        }
+      },
+      "per_class": {
+        "sitting": {
+          "support": 173,
+          "predicted": 169,
+          "precision": 1.0,
+          "recall": 0.976878612716763,
+          "f1": 0.9883040935672515,
+          "unknown": 4
+        },
+        "standing": {
+          "support": 30,
+          "predicted": 30,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "unknown": 0
+        }
+      },
+      "uncertain_n": 41,
+      "uncertain_rejected": 39,
+      "uncertain_rejection_rate": 0.9512195121951219,
+      "ignore_n": 12,
+      "ignore_rejected": 8,
+      "ignore_policy": "Excluded from binary metrics, model fitting, calibration and threshold selection."
+    },
+    "clear": {
+      "known_n": 10,
+      "accepted": 10,
+      "errors_among_accepted": 0,
+      "coverage": 1.0,
+      "unknown_rate": 0.0,
+      "selective_error": 0.0,
+      "selective_error_wilson95": [
+        0,
+        0.2775401687666166
+      ],
+      "accuracy_counting_unknown_as_miss": 1.0,
+      "macro_f1": 1.0,
+      "confusion": {
+        "sitting": {
+          "sitting": 0,
+          "standing": 0,
+          "unknown": 0
+        },
+        "standing": {
+          "sitting": 0,
+          "standing": 10,
+          "unknown": 0
+        }
+      },
+      "per_class": {
+        "sitting": {
+          "support": 0,
+          "predicted": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "unknown": 0
+        },
+        "standing": {
+          "support": 10,
+          "predicted": 10,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "unknown": 0
+        }
+      },
+      "uncertain_n": 6,
+      "uncertain_rejected": 6,
+      "uncertain_rejection_rate": 1.0,
+      "ignore_n": 0,
+      "ignore_rejected": 0,
+      "ignore_policy": "Excluded from binary metrics, model fitting, calibration and threshold selection."
+    },
+    "partial": {
+      "known_n": 25,
+      "accepted": 24,
+      "errors_among_accepted": 0,
+      "coverage": 0.96,
+      "unknown_rate": 0.04,
+      "selective_error": 0.0,
+      "selective_error_wilson95": [
+        0,
+        0.13798057582897535
+      ],
+      "accuracy_counting_unknown_as_miss": 0.96,
+      "macro_f1": 0.9285714285714286,
+      "confusion": {
+        "sitting": {
+          "sitting": 3,
+          "standing": 0,
+          "unknown": 1
+        },
+        "standing": {
+          "sitting": 0,
+          "standing": 21,
+          "unknown": 0
+        }
+      },
+      "per_class": {
+        "sitting": {
+          "support": 4,
+          "predicted": 3,
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571428571428571,
+          "unknown": 1
+        },
+        "standing": {
+          "support": 21,
+          "predicted": 21,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "unknown": 0
+        }
+      },
+      "uncertain_n": 0,
+      "uncertain_rejected": 0,
+      "uncertain_rejection_rate": null,
+      "ignore_n": 0,
+      "ignore_rejected": 0,
+      "ignore_policy": "Excluded from binary metrics, model fitting, calibration and threshold selection."
+    },
+    "severe": {
+      "known_n": 42,
+      "accepted": 39,
+      "errors_among_accepted": 0,
+      "coverage": 0.9285714285714286,
+      "unknown_rate": 0.07142857142857142,
+      "selective_error": 0.0,
+      "selective_error_wilson95": [
+        0,
+        0.08966985360023902
+      ],
+      "accuracy_counting_unknown_as_miss": 0.9285714285714286,
+      "macro_f1": 0.9788732394366197,
+      "confusion": {
+        "sitting": {
+          "sitting": 34,
+          "standing": 0,
+          "unknown": 3
+        },
+        "standing": {
+          "sitting": 0,
+          "standing": 5,
+          "unknown": 0
+        }
+      },
+      "per_class": {
+        "sitting": {
+          "support": 37,
+          "predicted": 34,
+          "precision": 1.0,
+          "recall": 0.918918918918919,
+          "f1": 0.9577464788732394,
+          "unknown": 3
+        },
+        "standing": {
+          "support": 5,
+          "predicted": 5,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "unknown": 0
+        }
+      },
+      "uncertain_n": 12,
+      "uncertain_rejected": 12,
+      "uncertain_rejection_rate": 1.0,
+      "ignore_n": 0,
+      "ignore_rejected": 0,
+      "ignore_policy": "Excluded from binary metrics, model fitting, calibration and threshold selection."
+    }
+  },
+  "by_origin": {
+    "old": {
+      "overall": {
+        "known_n": 203,
+        "accepted": 199,
+        "errors_among_accepted": 0,
+        "coverage": 0.9802955665024631,
+        "unknown_rate": 0.019704433497536946,
+        "selective_error": 0.0,
+        "selective_error_wilson95": [
+          0,
+          0.018938915883132453
+        ],
+        "accuracy_counting_unknown_as_miss": 0.9802955665024631,
+        "macro_f1": 0.9941520467836258,
+        "confusion": {
+          "sitting": {
+            "sitting": 169,
+            "standing": 0,
+            "unknown": 4
+          },
+          "standing": {
+            "sitting": 0,
+            "standing": 30,
+            "unknown": 0
+          }
+        },
+        "per_class": {
+          "sitting": {
+            "support": 173,
+            "predicted": 169,
+            "precision": 1.0,
+            "recall": 0.976878612716763,
+            "f1": 0.9883040935672515,
+            "unknown": 4
+          },
+          "standing": {
+            "support": 30,
+            "predicted": 30,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "unknown": 0
+          }
+        },
+        "uncertain_n": 41,
+        "uncertain_rejected": 39,
+        "uncertain_rejection_rate": 0.9512195121951219,
+        "ignore_n": 11,
+        "ignore_rejected": 7,
+        "ignore_policy": "Excluded from binary metrics, model fitting, calibration and threshold selection."
+      },
+      "visibility_proxy_groups": {
+        "legs_clear_proxy": {
+          "known_n": 29,
+          "accepted": 26,
+          "errors_among_accepted": 0,
+          "coverage": 0.896551724137931,
+          "unknown_rate": 0.10344827586206896,
+          "selective_error": 0.0,
+          "selective_error_wilson95": [
+            0,
+            0.12873304380462175
+          ],
+          "accuracy_counting_unknown_as_miss": 0.896551724137931,
+          "macro_f1": 0.8846153846153846,
+          "confusion": {
+            "sitting": {
+              "sitting": 5,
+              "standing": 0,
+              "unknown": 3
+            },
+            "standing": {
+              "sitting": 0,
+              "standing": 21,
+              "unknown": 0
+            }
+          },
+          "per_class": {
+            "sitting": {
+              "support": 8,
+              "predicted": 5,
+              "precision": 1.0,
+              "recall": 0.625,
+              "f1": 0.7692307692307693,
+              "unknown": 3
+            },
+            "standing": {
+              "support": 21,
+              "predicted": 21,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "unknown": 0
+            }
+          },
+          "uncertain_n": 13,
+          "uncertain_rejected": 11,
+          "uncertain_rejection_rate": 0.8461538461538461,
+          "ignore_n": 9,
+          "ignore_rejected": 6,
+          "ignore_policy": "Excluded from binary metrics, model fitting, calibration and threshold selection."
+        },
+        "legs_partial_proxy": {
+          "known_n": 39,
+          "accepted": 38,
+          "errors_among_accepted": 0,
+          "coverage": 0.9743589743589743,
+          "unknown_rate": 0.02564102564102564,
+          "selective_error": 0.0,
+          "selective_error_wilson95": [
+            0,
+            0.09181293258383999
+          ],
+          "accuracy_counting_unknown_as_miss": 0.9743589743589743,
+          "macro_f1": 0.9915254237288136,
+          "confusion": {
+            "sitting": {
+              "sitting": 29,
+              "standing": 0,
+              "unknown": 1
+            },
+            "standing": {
+              "sitting": 0,
+              "standing": 9,
+              "unknown": 0
+            }
+          },
+          "per_class": {
+            "sitting": {
+              "support": 30,
+              "predicted": 29,
+              "precision": 1.0,
+              "recall": 0.9666666666666667,
+              "f1": 0.9830508474576272,
+              "unknown": 1
+            },
+            "standing": {
+              "support": 9,
+              "predicted": 9,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "unknown": 0
+            }
+          },
+          "uncertain_n": 3,
+          "uncertain_rejected": 3,
+          "uncertain_rejection_rate": 1.0,
+          "ignore_n": 0,
+          "ignore_rejected": 0,
+          "ignore_policy": "Excluded from binary metrics, model fitting, calibration and threshold selection."
+        },
+        "legs_hidden_proxy": {
+          "known_n": 135,
+          "accepted": 135,
+          "errors_among_accepted": 0,
+          "coverage": 1.0,
+          "unknown_rate": 0.0,
+          "selective_error": 0.0,
+          "selective_error_wilson95": [
+            1.734723475976807e-18,
+            0.027668940720936668
+          ],
+          "accuracy_counting_unknown_as_miss": 1.0,
+          "macro_f1": 1.0,
+          "confusion": {
+            "sitting": {
+              "sitting": 135,
+              "standing": 0,
+              "unknown": 0
+            },
+            "standing": {
+              "sitting": 0,
+              "standing": 0,
+              "unknown": 0
+            }
+          },
+          "per_class": {
+            "sitting": {
+              "support": 135,
+              "predicted": 135,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "unknown": 0
+            },
+            "standing": {
+              "support": 0,
+              "predicted": 0,
+              "precision": null,
+              "recall": null,
+              "f1": null,
+              "unknown": 0
+            }
+          },
+          "uncertain_n": 25,
+          "uncertain_rejected": 25,
+          "uncertain_rejection_rate": 1.0,
+          "ignore_n": 2,
+          "ignore_rejected": 1,
+          "ignore_policy": "Excluded from binary metrics, model fitting, calibration and threshold selection."
+        }
+      },
+      "manual_occlusion_groups": {
+        "unmarked": {
+          "known_n": 203,
+          "accepted": 199,
+          "errors_among_accepted": 0,
+          "coverage": 0.9802955665024631,
+          "unknown_rate": 0.019704433497536946,
+          "selective_error": 0.0,
+          "selective_error_wilson95": [
+            0,
+            0.018938915883132453
+          ],
+          "accuracy_counting_unknown_as_miss": 0.9802955665024631,
+          "macro_f1": 0.9941520467836258,
+          "confusion": {
+            "sitting": {
+              "sitting": 169,
+              "standing": 0,
+              "unknown": 4
+            },
+            "standing": {
+              "sitting": 0,
+              "standing": 30,
+              "unknown": 0
+            }
+          },
+          "per_class": {
+            "sitting": {
+              "support": 173,
+              "predicted": 169,
+              "precision": 1.0,
+              "recall": 0.976878612716763,
+              "f1": 0.9883040935672515,
+              "unknown": 4
+            },
+            "standing": {
+              "support": 30,
+              "predicted": 30,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "unknown": 0
+            }
+          },
+          "uncertain_n": 41,
+          "uncertain_rejected": 39,
+          "uncertain_rejection_rate": 0.9512195121951219,
+          "ignore_n": 11,
+          "ignore_rejected": 7,
+          "ignore_policy": "Excluded from binary metrics, model fitting, calibration and threshold selection."
+        },
+        "clear": {
+          "known_n": 0,
+          "accepted": 0,
+          "errors_among_accepted": 0,
+          "coverage": null,
+          "unknown_rate": null,
+          "selective_error": null,
+          "selective_error_wilson95": null,
+          "accuracy_counting_unknown_as_miss": null,
+          "macro_f1": null,
+          "confusion": {
+            "sitting": {
+              "sitting": 0,
+              "standing": 0,
+              "unknown": 0
+            },
+            "standing": {
+              "sitting": 0,
+              "standing": 0,
+              "unknown": 0
+            }
+          },
+          "per_class": {
+            "sitting": {
+              "support": 0,
+              "predicted": 0,
+              "precision": null,
+              "recall": null,
+              "f1": null,
+              "unknown": 0
+            },
+            "standing": {
+              "support": 0,
+              "predicted": 0,
+              "precision": null,
+              "recall": null,
+              "f1": null,
+              "unknown": 0
+            }
+          },
+          "uncertain_n": 0,
+          "uncertain_rejected": 0,
+          "uncertain_rejection_rate": null,
+          "ignore_n": 0,
+          "ignore_rejected": 0,
+          "ignore_policy": "Excluded from binary metrics, model fitting, calibration and threshold selection."
+        },
+        "partial": {
+          "known_n": 0,
+          "accepted": 0,
+          "errors_among_accepted": 0,
+          "coverage": null,
+          "unknown_rate": null,
+          "selective_error": null,
+          "selective_error_wilson95": null,
+          "accuracy_counting_unknown_as_miss": null,
+          "macro_f1": null,
+          "confusion": {
+            "sitting": {
+              "sitting": 0,
+              "standing": 0,
+              "unknown": 0
+            },
+            "standing": {
+              "sitting": 0,
+              "standing": 0,
+              "unknown": 0
+            }
+          },
+          "per_class": {
+            "sitting": {
+              "support": 0,
+              "predicted": 0,
+              "precision": null,
+              "recall": null,
+              "f1": null,
+              "unknown": 0
+            },
+            "standing": {
+              "support": 0,
+              "predicted": 0,
+              "precision": null,
+              "recall": null,
+              "f1": null,
+              "unknown": 0
+            }
+          },
+          "uncertain_n": 0,
+          "uncertain_rejected": 0,
+          "uncertain_rejection_rate": null,
+          "ignore_n": 0,
+          "ignore_rejected": 0,
+          "ignore_policy": "Excluded from binary metrics, model fitting, calibration and threshold selection."
+        },
+        "severe": {
+          "known_n": 0,
+          "accepted": 0,
+          "errors_among_accepted": 0,
+          "coverage": null,
+          "unknown_rate": null,
+          "selective_error": null,
+          "selective_error_wilson95": null,
+          "accuracy_counting_unknown_as_miss": null,
+          "macro_f1": null,
+          "confusion": {
+            "sitting": {
+              "sitting": 0,
+              "standing": 0,
+              "unknown": 0
+            },
+            "standing": {
+              "sitting": 0,
+              "standing": 0,
+              "unknown": 0
+            }
+          },
+          "per_class": {
+            "sitting": {
+              "support": 0,
+              "predicted": 0,
+              "precision": null,
+              "recall": null,
+              "f1": null,
+              "unknown": 0
+            },
+            "standing": {
+              "support": 0,
+              "predicted": 0,
+              "precision": null,
+              "recall": null,
+              "f1": null,
+              "unknown": 0
+            }
+          },
+          "uncertain_n": 0,
+          "uncertain_rejected": 0,
+          "uncertain_rejection_rate": null,
+          "ignore_n": 0,
+          "ignore_rejected": 0,
+          "ignore_policy": "Excluded from binary metrics, model fitting, calibration and threshold selection."
+        }
+      }
+    },
+    "hard_new": {
+      "overall": {
+        "known_n": 77,
+        "accepted": 73,
+        "errors_among_accepted": 0,
+        "coverage": 0.948051948051948,
+        "unknown_rate": 0.05194805194805195,
+        "selective_error": 0.0,
+        "selective_error_wilson95": [
+          0,
+          0.04999375338358389
+        ],
+        "accuracy_counting_unknown_as_miss": 0.948051948051948,
+        "macro_f1": 0.9743589743589743,
+        "confusion": {
+          "sitting": {
+            "sitting": 37,
+            "standing": 0,
+            "unknown": 4
+          },
+          "standing": {
+            "sitting": 0,
+            "standing": 36,
+            "unknown": 0
+          }
+        },
+        "per_class": {
+          "sitting": {
+            "support": 41,
+            "predicted": 37,
+            "precision": 1.0,
+            "recall": 0.9024390243902439,
+            "f1": 0.9487179487179487,
+            "unknown": 4
+          },
+          "standing": {
+            "support": 36,
+            "predicted": 36,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "unknown": 0
+          }
+        },
+        "uncertain_n": 18,
+        "uncertain_rejected": 18,
+        "uncertain_rejection_rate": 1.0,
+        "ignore_n": 1,
+        "ignore_rejected": 1,
+        "ignore_policy": "Excluded from binary metrics, model fitting, calibration and threshold selection."
+      },
+      "visibility_proxy_groups": {
+        "legs_clear_proxy": {
+          "known_n": 32,
+          "accepted": 29,
+          "errors_among_accepted": 0,
+          "coverage": 0.90625,
+          "unknown_rate": 0.09375,
+          "selective_error": 0.0,
+          "selective_error_wilson95": [
+            0,
+            0.11697359446555587
+          ],
+          "accuracy_counting_unknown_as_miss": 0.90625,
+          "macro_f1": 0.8636363636363636,
+          "confusion": {
+            "sitting": {
+              "sitting": 4,
+              "standing": 0,
+              "unknown": 3
+            },
+            "standing": {
+              "sitting": 0,
+              "standing": 25,
+              "unknown": 0
+            }
+          },
+          "per_class": {
+            "sitting": {
+              "support": 7,
+              "predicted": 4,
+              "precision": 1.0,
+              "recall": 0.5714285714285714,
+              "f1": 0.7272727272727273,
+              "unknown": 3
+            },
+            "standing": {
+              "support": 25,
+              "predicted": 25,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "unknown": 0
+            }
+          },
+          "uncertain_n": 7,
+          "uncertain_rejected": 7,
+          "uncertain_rejection_rate": 1.0,
+          "ignore_n": 1,
+          "ignore_rejected": 1,
+          "ignore_policy": "Excluded from binary metrics, model fitting, calibration and threshold selection."
+        },
+        "legs_partial_proxy": {
+          "known_n": 11,
+          "accepted": 11,
+          "errors_among_accepted": 0,
+          "coverage": 1.0,
+          "unknown_rate": 0.0,
+          "selective_error": 0.0,
+          "selective_error_wilson95": [
+            2.7755575615628914e-17,
+            0.2588400172488141
+          ],
+          "accuracy_counting_unknown_as_miss": 1.0,
+          "macro_f1": 1.0,
+          "confusion": {
+            "sitting": {
+              "sitting": 2,
+              "standing": 0,
+              "unknown": 0
+            },
+            "standing": {
+              "sitting": 0,
+              "standing": 9,
+              "unknown": 0
+            }
+          },
+          "per_class": {
+            "sitting": {
+              "support": 2,
+              "predicted": 2,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "unknown": 0
+            },
+            "standing": {
+              "support": 9,
+              "predicted": 9,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "unknown": 0
+            }
+          },
+          "uncertain_n": 0,
+          "uncertain_rejected": 0,
+          "uncertain_rejection_rate": null,
+          "ignore_n": 0,
+          "ignore_rejected": 0,
+          "ignore_policy": "Excluded from binary metrics, model fitting, calibration and threshold selection."
+        },
+        "legs_hidden_proxy": {
+          "known_n": 34,
+          "accepted": 33,
+          "errors_among_accepted": 0,
+          "coverage": 0.9705882352941176,
+          "unknown_rate": 0.029411764705882353,
+          "selective_error": 0.0,
+          "selective_error_wilson95": [
+            0,
+            0.10427343003561192
+          ],
+          "accuracy_counting_unknown_as_miss": 0.9705882352941176,
+          "macro_f1": 0.9920634920634921,
+          "confusion": {
+            "sitting": {
+              "sitting": 31,
+              "standing": 0,
+              "unknown": 1
+            },
+            "standing": {
+              "sitting": 0,
+              "standing": 2,
+              "unknown": 0
+            }
+          },
+          "per_class": {
+            "sitting": {
+              "support": 32,
+              "predicted": 31,
+              "precision": 1.0,
+              "recall": 0.96875,
+              "f1": 0.9841269841269841,
+              "unknown": 1
+            },
+            "standing": {
+              "support": 2,
+              "predicted": 2,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "unknown": 0
+            }
+          },
+          "uncertain_n": 11,
+          "uncertain_rejected": 11,
+          "uncertain_rejection_rate": 1.0,
+          "ignore_n": 0,
+          "ignore_rejected": 0,
+          "ignore_policy": "Excluded from binary metrics, model fitting, calibration and threshold selection."
+        }
+      },
+      "manual_occlusion_groups": {
+        "unmarked": {
+          "known_n": 0,
+          "accepted": 0,
+          "errors_among_accepted": 0,
+          "coverage": null,
+          "unknown_rate": null,
+          "selective_error": null,
+          "selective_error_wilson95": null,
+          "accuracy_counting_unknown_as_miss": null,
+          "macro_f1": null,
+          "confusion": {
+            "sitting": {
+              "sitting": 0,
+              "standing": 0,
+              "unknown": 0
+            },
+            "standing": {
+              "sitting": 0,
+              "standing": 0,
+              "unknown": 0
+            }
+          },
+          "per_class": {
+            "sitting": {
+              "support": 0,
+              "predicted": 0,
+              "precision": null,
+              "recall": null,
+              "f1": null,
+              "unknown": 0
+            },
+            "standing": {
+              "support": 0,
+              "predicted": 0,
+              "precision": null,
+              "recall": null,
+              "f1": null,
+              "unknown": 0
+            }
+          },
+          "uncertain_n": 0,
+          "uncertain_rejected": 0,
+          "uncertain_rejection_rate": null,
+          "ignore_n": 1,
+          "ignore_rejected": 1,
+          "ignore_policy": "Excluded from binary metrics, model fitting, calibration and threshold selection."
+        },
+        "clear": {
+          "known_n": 10,
+          "accepted": 10,
+          "errors_among_accepted": 0,
+          "coverage": 1.0,
+          "unknown_rate": 0.0,
+          "selective_error": 0.0,
+          "selective_error_wilson95": [
+            0,
+            0.2775401687666166
+          ],
+          "accuracy_counting_unknown_as_miss": 1.0,
+          "macro_f1": 1.0,
+          "confusion": {
+            "sitting": {
+              "sitting": 0,
+              "standing": 0,
+              "unknown": 0
+            },
+            "standing": {
+              "sitting": 0,
+              "standing": 10,
+              "unknown": 0
+            }
+          },
+          "per_class": {
+            "sitting": {
+              "support": 0,
+              "predicted": 0,
+              "precision": null,
+              "recall": null,
+              "f1": null,
+              "unknown": 0
+            },
+            "standing": {
+              "support": 10,
+              "predicted": 10,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "unknown": 0
+            }
+          },
+          "uncertain_n": 6,
+          "uncertain_rejected": 6,
+          "uncertain_rejection_rate": 1.0,
+          "ignore_n": 0,
+          "ignore_rejected": 0,
+          "ignore_policy": "Excluded from binary metrics, model fitting, calibration and threshold selection."
+        },
+        "partial": {
+          "known_n": 25,
+          "accepted": 24,
+          "errors_among_accepted": 0,
+          "coverage": 0.96,
+          "unknown_rate": 0.04,
+          "selective_error": 0.0,
+          "selective_error_wilson95": [
+            0,
+            0.13798057582897535
+          ],
+          "accuracy_counting_unknown_as_miss": 0.96,
+          "macro_f1": 0.9285714285714286,
+          "confusion": {
+            "sitting": {
+              "sitting": 3,
+              "standing": 0,
+              "unknown": 1
+            },
+            "standing": {
+              "sitting": 0,
+              "standing": 21,
+              "unknown": 0
+            }
+          },
+          "per_class": {
+            "sitting": {
+              "support": 4,
+              "predicted": 3,
+              "precision": 1.0,
+              "recall": 0.75,
+              "f1": 0.8571428571428571,
+              "unknown": 1
+            },
+            "standing": {
+              "support": 21,
+              "predicted": 21,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "unknown": 0
+            }
+          },
+          "uncertain_n": 0,
+          "uncertain_rejected": 0,
+          "uncertain_rejection_rate": null,
+          "ignore_n": 0,
+          "ignore_rejected": 0,
+          "ignore_policy": "Excluded from binary metrics, model fitting, calibration and threshold selection."
+        },
+        "severe": {
+          "known_n": 42,
+          "accepted": 39,
+          "errors_among_accepted": 0,
+          "coverage": 0.9285714285714286,
+          "unknown_rate": 0.07142857142857142,
+          "selective_error": 0.0,
+          "selective_error_wilson95": [
+            0,
+            0.08966985360023902
+          ],
+          "accuracy_counting_unknown_as_miss": 0.9285714285714286,
+          "macro_f1": 0.9788732394366197,
+          "confusion": {
+            "sitting": {
+              "sitting": 34,
+              "standing": 0,
+              "unknown": 3
+            },
+            "standing": {
+              "sitting": 0,
+              "standing": 5,
+              "unknown": 0
+            }
+          },
+          "per_class": {
+            "sitting": {
+              "support": 37,
+              "predicted": 34,
+              "precision": 1.0,
+              "recall": 0.918918918918919,
+              "f1": 0.9577464788732394,
+              "unknown": 3
+            },
+            "standing": {
+              "support": 5,
+              "predicted": 5,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "unknown": 0
+            }
+          },
+          "uncertain_n": 12,
+          "uncertain_rejected": 12,
+          "uncertain_rejection_rate": 1.0,
+          "ignore_n": 0,
+          "ignore_rejected": 0,
+          "ignore_policy": "Excluded from binary metrics, model fitting, calibration and threshold selection."
+        }
+      }
+    }
+  },
+  "operational_risk_including_uncertain": {
+    "accepted": 274,
+    "unsafe_acceptances": 2,
+    "rate": 0.0072992700729927005,
+    "meaning": "Accepted uncertain examples count as unsafe, not necessarily factually wrong standing/sitting."
+  }
+}

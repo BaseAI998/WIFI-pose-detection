@@ -1,0 +1,6 @@
+{
+  "median_ms_per_person": 1.3953381764604325,
+  "includes": "masked features, reflected view, NumPy model, support rejection",
+  "excludes": "YOLO, video decode/render, I/O",
+  "batch_size": 351
+}

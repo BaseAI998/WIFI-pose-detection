@@ -1,0 +1,7 @@
+# Existing outputs/example is protected; use a new dataset or --output-dir.
+project_root: ..
+input_dir: inputs/example
+model_dir: runs/hard_v2_complete/model
+output_dir: null
+skip_video: false
+labeled_predictions: null

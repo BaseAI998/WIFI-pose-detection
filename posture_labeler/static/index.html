@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>姿态标注台 · 本地工作区</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brand-icon" aria-hidden="true">⌘</span><div><h1>姿态标注台</h1><span class="subtitle">POSE ANNOTATION WORKSPACE</span></div></div>
+    <div class="privacy"><span class="dot"></span>本机运行 · 视频不上传</div>
+    <div class="header-actions"><button id="help-button" class="quiet">使用指南 <kbd>?</kbd></button><a class="export secondary" href="/api/export?format=csv" download>导出 CSV</a><a class="export primary" href="/api/export?format=jsonl" download>导出训练数据 ↗</a></div>
+  </header>
+
+  <div id="error-banner" class="error-banner" role="alert" hidden><span id="error-text"></span><button id="retry-button">重新连接 / 刷新</button><button id="dismiss-error" aria-label="关闭错误提示">×</button></div>
+  <main class="workspace">
+    <aside class="sidebar">
+      <div class="section-eyebrow">01 / 样本队列</div>
+      <h2>从一帧开始</h2>
+      <p id="video-name" class="file-name">正在连接本地数据…</p>
+      <div class="progress-card"><div class="progress-heading"><span>当前队列已标人物</span><strong id="progress-text">0 / 0</strong></div><progress id="progress" max="1" value="0"></progress><div class="counts"><span>坐 <b id="count-sitting">0</b></span><span>站 <b id="count-standing">0</b></span><span>不确定 <b id="count-uncertain">0</b></span><span>忽略 <b id="count-ignore">0</b></span></div></div>
+      <div class="sample-settings"><label for="step">抽样间隔</label><select id="step" data-lock><option value="1">每 1 秒</option><option value="3" selected>每 3 秒 · 推荐</option><option value="5">每 5 秒</option><option value="10">每 10 秒</option><option value="30">每 30 秒</option></select></div>
+      <div class="hard-sample-tools"><label class="check"><input id="hard-only" type="checkbox" data-lock>困难样本 · 本轮补标</label><p id="hard-summary">载入困难样本队列…</p></div>
+      <div class="queue-tools"><label class="check"><input id="pending-only" type="checkbox" data-lock>只看未完成帧</label><span id="frame-count">— 帧</span></div>
+      <nav id="frame-list" class="frame-list" aria-label="抽样帧列表"></nav>
+      <div class="jump-box"><label for="jump-value">添加 / 跳到指定画面</label><form id="jump-form"><select id="jump-mode" aria-label="跳转方式" data-lock><option value="frame">输出帧号</option><option value="time">原视频时间</option></select><input id="jump-value" aria-label="帧号或时间" placeholder="如 2400" required data-lock><button type="submit" aria-label="跳转" data-lock>↗</button></form><p>帧号从 0 开始；时间示例 06:20。已标和手动添加的帧会保留。</p></div>
+    </aside>
+
+    <section class="main-panel">
+      <div class="image-heading"><div><div class="section-eyebrow">02 / 查看原始画面</div><h2 id="frame-title">正在读取视频</h2><p id="frame-info">不会显示算法预测，避免影响人工判断</p></div><div class="image-toggles"><label class="check"><input type="checkbox" id="show-skeleton">骨架 <kbd>K</kbd></label><label class="check"><input type="checkbox" id="show-boxes" checked>框 <kbd>B</kbd></label><button id="fullscreen-button" class="quiet" data-lock>放大原图 ⛶</button></div></div>
+      <div id="stage" class="stage"><canvas id="scene" aria-label="原始视频画面；可点击人物框选择目标"></canvas><div id="image-loading" class="image-loading">正在解码原始画面…</div></div>
+      <div class="person-strip"><span class="muted">当前帧人物</span><div id="person-list" role="group" aria-label="选择当前帧人物"></div><span class="strip-hint">点击人物框也可切换</span></div>
+      <div class="navigation"><button id="prev-button" class="secondary" data-lock>← 上一个人</button><span id="position-text">—</span><button id="next-button" class="secondary" data-lock>下一个人 →</button><button id="next-pending" class="text-button" data-lock>下一个未标 <kbd>N</kbd></button></div>
+      <div class="guidance-card"><span class="guidance-icon">i</span><div><strong>标的是这个人当前的姿态，不是关键点质量</strong><p>腿被桌子遮挡，但原图能确认坐着，仍标「坐着」。人工也无法确定时标「不确定」；重复检测只保留一个框，其余标「忽略」。</p></div></div>
+      <div class="session-summary"><span id="save-status" role="status" aria-live="polite">正在连接…</span><span id="global-count">标签保存于本机 SQLite</span></div>
+    </section>
+
+    <aside class="annotation-panel">
+      <div class="annotation-heading"><div><div class="section-eyebrow">03 / 人工标注</div><h2 id="person-title">选择一个人</h2></div><span id="person-status" class="status-pill">未标注</span></div>
+      <div class="crop-wrap"><canvas id="crop" aria-label="当前人物的放大画面"></canvas><span class="crop-caption">原图局部 · 保留周边上下文</span></div>
+      <label class="zoom-control" for="zoom"><span>局部缩放</span><input id="zoom" type="range" min="0.7" max="2.5" value="1" step="0.1"><output id="zoom-value">1.0×</output></label>
+      <div class="field-heading"><label for="occlusion">腿部可见程度</label><span id="occlusion-hint">可选，建议先选</span></div>
+      <select id="occlusion" class="full-width" data-lock><option value="unmarked">未标记</option><option value="clear">清晰可见</option><option value="partial">部分遮挡</option><option value="severe">严重遮挡 / 出画</option></select>
+      <div class="field-heading"><span>这一帧，他 / 她是什么姿态？</span></div>
+      <div class="label-grid" role="group" aria-label="姿态标签">
+        <button class="label-button sitting" data-label="sitting" data-lock><span><strong>坐着</strong><small>Sitting</small></span><kbd>1</kbd></button>
+        <button class="label-button standing" data-label="standing" data-lock><span><strong>站着</strong><small>Standing</small></span><kbd>2</kbd></button>
+        <button class="label-button uncertain" data-label="uncertain" data-lock><span><strong>不确定</strong><small>无法判断 / 过渡中</small></span><kbd>3</kbd></button>
+        <button class="label-button ignore" data-label="ignore" data-lock><span><strong>忽略</strong><small>误检 / 重复框</small></span><kbd>4</kbd></button>
+      </div>
+      <label class="check auto-next"><input id="auto-next" type="checkbox" checked>保存后自动进入下一个未标人物</label>
+      <label class="note-label" for="note">备注 <span>可选</span></label><textarea id="note" placeholder="例如：重复框，与 P5 是同一个人" rows="2" maxlength="1000" data-lock></textarea>
+      <button id="save-next" class="primary full-width" data-lock>保存并继续 <kbd>Enter</kbd></button>
+      <div class="edit-actions"><button id="undo-button" class="quiet" disabled>撤销上一步 <kbd>Ctrl Z</kbd></button><button id="clear-button" class="quiet" data-lock>清除当前标签</button></div>
+      <p class="annotation-note">姿态按钮 / 数字键会立即保存。遮挡和备注可先填，再选择姿态。人员 P 编号仅在当前帧有效。</p>
+    </aside>
+  </main>
+  <footer class="footer"><span><kbd>1</kbd> 坐着 <kbd>2</kbd> 站着 <kbd>3</kbd> 不确定 <kbd>4</kbd> 忽略</span><span><kbd>←</kbd><kbd>→</kbd> 上 / 下一个人 <kbd>N</kbd> 下一个未标</span><span id="connection-state"><span class="dot"></span>离线优先 · 自动保存</span></footer>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <dialog id="help-dialog"><div class="dialog-heading"><h2>几分钟就能开始标注</h2><button id="close-help" aria-label="关闭使用指南">×</button></div><ol><li>左侧默认每 3 秒抽样；可输入输出帧号 <strong>2400</strong> 定位已知问题。</li><li>看中间原图和右侧放大图；点击人物框或 P 按钮选择目标。</li><li>先按需要选择腿部遮挡、填写备注，再按 <strong>1 / 2 / 3 / 4</strong> 标姿态。提交成功才会自动切换。</li><li>原图能确认坐着，即使腿看不见也标坐着。站着弯腰仍属站立。人工无法确定或正在起身时标不确定。</li><li>重复框只给一个框标姿态，其余选忽略。漏检的人本工具暂不能补画框。</li><li>每次修改会保存到本机数据库；刷新或重启可继续。取消「自动进入」可逐个复核。</li><li>「导出训练数据」得到 JSONL，包含原图帧号、框、17 个关键点和人工标签。CSV 便于核查。导出包含所有已标样本，不受左侧筛选限制。</li></ol><div class="help-callout">不确定和忽略不会标为可训练的站/坐样本。导出不会自动划分训练集 / 测试集；后续请按不相邻时间段划分，避免相邻帧泄漏。</div><p id="database-path" class="database-path"></p><button id="got-it" class="primary">开始标注</button></dialog>
+</body>
+</html>

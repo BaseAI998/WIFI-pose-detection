@@ -1,0 +1,110 @@
+{
+  "input": "C:\\Users\\BaseAI\\Desktop\\WIFI\\video\\VID_20260921_182630.mp4",
+  "model": "yolo11x-pose.pt",
+  "device": "cpu",
+  "image_size": 640,
+  "batch_size": 8,
+  "detection_confidence": 0.25,
+  "iou": 0.7,
+  "thresholds": {
+    "keypoint_confidence": 0.35,
+    "unknown_confidence_threshold": 0.65,
+    "standing_max_torso_tilt_deg": 25.0,
+    "sitting_max_torso_tilt_deg": 60.0,
+    "standing_min_leg_extension": 1.1
+  },
+  "video": {
+    "width": 1280,
+    "height": 720,
+    "fps": 29.965145801549806,
+    "source_frame_count": 20663,
+    "source_duration_sec": 689.567811111111
+  },
+  "intervals_sec": [
+    [
+      60.0,
+      120.0
+    ],
+    [
+      360.0,
+      420.0
+    ],
+    [
+      600.0,
+      660.0
+    ]
+  ],
+  "processed_frames": 5394,
+  "detected_people_instances": 22398,
+  "posture_counts": {
+    "unknown": 4934,
+    "sitting": 16036,
+    "standing": 1428
+  },
+  "elapsed_sec": 103.01431340025738,
+  "average_fps": 52.36165559869201,
+  "outputs": {
+    "annotated_video": "C:\\Users\\BaseAI\\Desktop\\WIFI\\yolo_pose_posture\\outputs_yolo11x_posture_v2\\VID_20260921_182630_pose_posture.mp4",
+    "keypoints_jsonl": "C:\\Users\\BaseAI\\Desktop\\WIFI\\yolo_pose_posture\\outputs_yolo11x_posture_v2\\VID_20260921_182630_keypoints.jsonl",
+    "keypoints_csv": "C:\\Users\\BaseAI\\Desktop\\WIFI\\yolo_pose_posture\\outputs_yolo11x_posture_v2\\VID_20260921_182630_keypoints.csv"
+  },
+  "algorithm_version": "2.0",
+  "scene_calibration": {
+    "name": "meeting_room_far_side_seats",
+    "reference_width": 1280,
+    "reference_height": 720,
+    "anchors": [
+      {
+        "x": 483.49609375,
+        "shoulder_y": 207.62963104248047,
+        "hip_y": 262.46205139160156,
+        "torso_length": 56.1166837819695
+      },
+      {
+        "x": 647.86279296875,
+        "shoulder_y": 154.3074188232422,
+        "hip_y": 214.40020751953125,
+        "torso_length": 60.09355263063625
+      },
+      {
+        "x": 738.2566833496094,
+        "shoulder_y": 142.2872543334961,
+        "hip_y": 191.59930419921875,
+        "torso_length": 49.48482147312297
+      }
+    ],
+    "provenance": {
+      "source": "outputs_yolo11x\\VID_20260921_182630_keypoints.jsonl",
+      "source_sha256": "53878cbb43418f129ed5e92b5bee3504245f59c48128b46c80b7f4e85cd3a78c",
+      "output_frame": 2400,
+      "source_frame": 11389,
+      "source_time": "00:06:20.075",
+      "manually_confirmed_seated_ids": [
+        2,
+        3,
+        4
+      ],
+      "note": "User-confirmed seated examples; calibration data, NOT held-out evaluation."
+    },
+    "limitations": "Fixed camera only. Shoulder/hip spatial prior, not a universal seated classifier. Recalibrate after camera/crop changes."
+  },
+  "reuses_keypoints": true,
+  "cached_keypoints": "C:\\Users\\BaseAI\\Desktop\\WIFI\\yolo_pose_posture\\outputs_yolo11x\\VID_20260921_182630_keypoints.jsonl",
+  "cached_keypoints_sha256": "53878cbb43418f129ed5e92b5bee3504245f59c48128b46c80b7f4e85cd3a78c",
+  "previous_pose_inference_elapsed_sec": 2592.8239495996386,
+  "evidence_sources": {
+    "insufficient_evidence": 2578,
+    "geometry": 8198,
+    "calibrated_seat": 11622
+  },
+  "label_transitions": {
+    "unknown -> unknown": 3888,
+    "sitting -> sitting": 4184,
+    "sitting -> unknown": 5,
+    "unknown -> standing": 329,
+    "unknown -> sitting": 11849,
+    "standing -> standing": 1099,
+    "standing -> unknown": 1041,
+    "standing -> sitting": 3
+  }
+}

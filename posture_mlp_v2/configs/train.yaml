@@ -1,0 +1,10 @@
+# Paths are relative to project_root; project_root is relative to this YAML.
+project_root: ..
+input_dir: inputs/example
+old_labels: inputs/example/labels/baseline.jsonl
+hard_labels: inputs/example/labels/hard_v1.jsonl
+output_dir: runs/my_experiment
+seed: 20261019
+# Model families, temporal embargoes and rejection selection remain the frozen
+# protocol in training.py, data.py and calibration.py. This reorganization does
+# not change those algorithms or retrain any model.

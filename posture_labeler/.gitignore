@@ -1,0 +1,6 @@
+__pycache__/
+data/
+*.log
+logs/*
+!logs/.gitkeep
+hard_samples/.active-*.tmp

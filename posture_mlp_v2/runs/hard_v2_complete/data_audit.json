@@ -1,0 +1,93 @@
+{
+  "sources": {
+    "metadata": {
+      "path": "C:\\Users\\BaseAI\\Desktop\\WIFI\\yolo_pose_posture\\outputs_yolo11x_posture_v2\\VID_20260921_182630_run_metadata.json",
+      "sha256": "eb09b253aee69023a8560aecc542f75d55187875ad2a2ed4f6ec80b739d61ecb"
+    },
+    "keypoints": {
+      "path": "C:\\Users\\BaseAI\\Desktop\\WIFI\\yolo_pose_posture\\outputs_yolo11x_posture_v2\\VID_20260921_182630_keypoints.jsonl",
+      "sha256": "2211c8d5cf677abd92616e1390e2f893d66d32e837030ba5e39314bafc1b837d"
+    },
+    "video": {
+      "path": "C:\\Users\\BaseAI\\Desktop\\WIFI\\video\\VID_20260921_182630.mp4",
+      "sha256": "fd6f9bc93c62b03a483fbd1ef9158a1a24a4b3bd77585dee934d7124f50b1954"
+    },
+    "ancestor_keypoints": {
+      "path": "C:\\Users\\BaseAI\\Desktop\\WIFI\\yolo_pose_posture\\outputs_yolo11x\\VID_20260921_182630_keypoints.jsonl",
+      "sha256": "53878cbb43418f129ed5e92b5bee3504245f59c48128b46c80b7f4e85cd3a78c"
+    },
+    "old_labels": {
+      "path": "C:\\Users\\BaseAI\\Desktop\\WIFI\\posture_labeler\\posture_labels_4678427a (1).jsonl",
+      "sha256": "45fa9b12d4ab528c33a7e87a2dc6a2198d6609d528ecf40bab8fbfde918c2106"
+    },
+    "hard_labels": {
+      "path": "C:\\Users\\BaseAI\\Desktop\\WIFI\\posture_labeler\\posture_labels_4678427a (1)-hard.jsonl",
+      "sha256": "8bf23b8e7caa2990891e77062121f34f712dc680b78baf2f2e0b5645cab85be5"
+    }
+  },
+  "dataset_id": "4678427a93d4ad7ecfb7dd27e42148273d944df619ce8e47634306c4aa74d6e5",
+  "old_n": 255,
+  "hard_export_n": 351,
+  "new_n": 96,
+  "label_counts": {
+    "ignore": 12,
+    "standing": 66,
+    "uncertain": 59,
+    "sitting": 214
+  },
+  "new_label_counts": {
+    "standing": 36,
+    "uncertain": 18,
+    "sitting": 41,
+    "ignore": 1
+  },
+  "annotation_changes": [],
+  "manual_occlusion_label_counts": {
+    "unmarked__ignore": 12,
+    "partial__standing": 21,
+    "unmarked__standing": 30,
+    "clear__standing": 10,
+    "unmarked__uncertain": 41,
+    "severe__uncertain": 12,
+    "clear__uncertain": 6,
+    "unmarked__sitting": 173,
+    "severe__sitting": 37,
+    "severe__standing": 5,
+    "partial__sitting": 4
+  },
+  "block_label_counts": {
+    "-1": {
+      "uncertain": 11,
+      "standing": 19,
+      "sitting": 44,
+      "ignore": 2
+    },
+    "0": {
+      "ignore": 3,
+      "standing": 10,
+      "uncertain": 18,
+      "sitting": 56
+    },
+    "1": {
+      "standing": 15,
+      "uncertain": 16,
+      "sitting": 52,
+      "ignore": 2
+    },
+    "2": {
+      "standing": 22,
+      "sitting": 62,
+      "ignore": 5,
+      "uncertain": 14
+    }
+  },
+  "verified_all_cache_detections": 22398,
+  "verified_frames": 5394,
+  "evaluation_status": "active_mined_development_only_no_independent_test",
+  "identity_split": "same camera and recurring people; P IDs are frame-local, not track identities",
+  "actual_minimum_gaps_seconds": {
+    "0__1": 7.008142000000021,
+    "0__2": 27.03140499999995,
+    "1__2": 7.542096000000001
+  }
+}

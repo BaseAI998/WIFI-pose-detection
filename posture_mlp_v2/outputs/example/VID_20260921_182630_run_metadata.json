@@ -1,0 +1,74 @@
+{
+  "input": "C:\\Users\\BaseAI\\Desktop\\WIFI\\video\\VID_20260921_182630.mp4",
+  "model": "yolo11x-pose.pt",
+  "posture_model": "C:\\Users\\BaseAI\\Desktop\\WIFI\\posture_mlp_v2\\runs\\hard_v2_complete\\model",
+  "posture_weights_sha256": "baaad4d8f8d0c618acf5754dfd5b3dfacc67108a758e44423b17adc767b80e68",
+  "posture_config_sha256": "56a2d554e9143e0c985e78782a32d3f6fdf063bc8f64b81fd4849a15dd867c78",
+  "algorithm_version": "hard-2.0",
+  "experimental": true,
+  "reuses_keypoints": true,
+  "cached_keypoints": "C:\\Users\\BaseAI\\Desktop\\WIFI\\yolo_pose_posture\\outputs_yolo11x_posture_v2\\VID_20260921_182630_keypoints.jsonl",
+  "cached_keypoints_sha256": "2211c8d5cf677abd92616e1390e2f893d66d32e837030ba5e39314bafc1b837d",
+  "scene_calibration": null,
+  "absolute_spatial_features": false,
+  "video": {
+    "width": 1280,
+    "height": 720,
+    "fps": 29.965145801549806,
+    "source_frame_count": 20663,
+    "source_duration_sec": 689.567811111111
+  },
+  "intervals_sec": [
+    [
+      60.0,
+      120.0
+    ],
+    [
+      360.0,
+      420.0
+    ],
+    [
+      600.0,
+      660.0
+    ]
+  ],
+  "processed_frames": 5394,
+  "detected_people_instances": 22398,
+  "posture_counts": {
+    "unknown": 4129,
+    "standing": 3067,
+    "sitting": 15202
+  },
+  "rejection_reasons": {
+    "missing_or_degenerate_torso": 1419,
+    "too_few_visible_keypoints": 326,
+    "low_conservative_confidence": 1694,
+    "outside_training_support": 2281,
+    "local_class_evidence_conflict": 779,
+    "mirror_label_disagreement": 188,
+    "near_human_uncertain_pose": 2053
+  },
+  "elapsed_seconds_without_yolo": 117.83158320002258,
+  "posture_config": {
+    "temperature": 1.0,
+    "reject_threshold": 0.975,
+    "rejection_policy": {
+      "threshold": 0.975,
+      "support_gate": true,
+      "radius_multiplier": 1.5,
+      "uncertain_ratio": 0.8
+    },
+    "keypoint_threshold": 0.35
+  },
+  "outputs": {
+    "keypoints_jsonl": "C:\\Users\\BaseAI\\Desktop\\WIFI\\posture_mlp_v2\\outputs\\hard_v2\\VID_20260921_182630_keypoints.jsonl",
+    "annotated_video": "C:\\Users\\BaseAI\\Desktop\\WIFI\\posture_mlp_v2\\outputs\\hard_v2\\VID_20260921_182630_hard_v2_pose_posture.mp4",
+    "qa": "C:\\Users\\BaseAI\\Desktop\\WIFI\\posture_mlp_v2\\outputs\\hard_v2\\qa"
+  },
+  "limitations": [
+    "Experimental single-camera baseline; calibration support is small.",
+    "No labels are used to override inference, including known ignored duplicate detections.",
+    "Cached detector duplicates/false positives remain; this is posture-only inference.",
+    "Frame-local person IDs are preserved, NOT persistent tracking IDs."
+  ]
+}

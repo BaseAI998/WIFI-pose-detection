@@ -1,0 +1,21 @@
+{
+  "status": "experimental_not_independently_validated",
+  "selected": "baseline_mlp__none",
+  "development_all_targets_met": false,
+  "independent_test_available": false,
+  "development_fail_closed_folds": [
+    1
+  ],
+  "production_ready": false,
+  "labels_changed": 0,
+  "warnings": [
+    "Old test and actively mined hard annotations are now development data, not a new test.",
+    "Model family chosen using development cross-fit results; numbers are selection-biased.",
+    "Final calibration block influenced development model selection; its metrics are NOT a final test.",
+    "No persistent identity tracking: same people/camera recur across blocks.",
+    "Five human uncertain instances remain accepted in the selected development predictions.",
+    "Selective zero known error does NOT mean 100% overall accuracy or reliable unknown rejection.",
+    "One development fold failed closed; temporal stability is inadequate.",
+    "Manual clear group has no accepted known examples; do not hide this behind aggregate precision."
+  ]
+}

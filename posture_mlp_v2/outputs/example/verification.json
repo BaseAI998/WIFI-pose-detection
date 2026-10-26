@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "all_source_hashes_unchanged": true,
+  "all_fold_and_final_training_reference_leakage_checks": "passed",
+  "all_detections_and_keypoints_unchanged": true,
+  "frames": 5394,
+  "person_instances": 22398,
+  "all_labeled_instances_matched": 351,
+  "single_vs_batch_predictions_checked": 109,
+  "video_frames_fully_decoded": 5394,
+  "posture_counts": {
+    "unknown": 4129,
+    "standing": 3067,
+    "sitting": 15202
+  }
+}

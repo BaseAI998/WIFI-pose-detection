@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "posture-mlp-v2"
+version = "2.0.0"
+description = "Occlusion-aware single-frame posture classification from COCO17 keypoints"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3"]
+
+[project.optional-dependencies]
+render = ["opencv-python-headless>=4.8", "PyYAML>=6,<7"]
+train = ["torch>=2", "opencv-python-headless>=4.8", "PyYAML>=6,<7"]
+
+[project.scripts]
+posture-train = "posture_mlp_v2.cli.train:main"
+posture-render = "posture_mlp_v2.cli.render:main"
+posture-report = "posture_mlp_v2.cli.report:main"
+posture-review = "posture_mlp_v2.cli.review:main"
+posture-verify = "posture_mlp_v2.cli.verify:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

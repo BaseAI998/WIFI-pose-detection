@@ -1,0 +1,11 @@
+name: posture-mlp-v2
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+# After activation, from this project directory:
+# python -m pip install -e ".[render]"
+# Training only (CPU wheel):
+# python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+# python -m pip install -e ".[train]"
